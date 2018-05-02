@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ShowParams.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+  </head> 
+    <body style="background-color: #FFC1C1">A sample show parameters
+            <form method="post" action="/MyTomcat/ShowParams">
+            Item Number:<input type="text" name="itemNum"><br>
+            Quantity:<input type="text" name="quantity"><br>
+            Price each:<input type="text" name="price" value="$"><br>
+            First Name:<input type="text" name="firstName"><br>
+            Last Name:<input type="text" name="lastName"><br>
+            Middle Initial:<input type="text" name="initial"><br>
+            
+            Shipping Address:<textarea name="address" row="3" cols="40"></textarea><br>
+            Credit Card:<br>
+            <!--单选框示例-->
+            &nbsp;&nbsp;<input type="radio" name="cardType" value="Visa">Visa<br>
+            &nbsp;&nbsp;<input type="radio" name="cardType" value="Master Card">Master Card<br>
+            &nbsp;&nbsp;<input type="radio" name="cardType" value="Amex">Amex<br>
+            &nbsp;&nbsp;<input type="radio" name="cardType" value="Discover">Discover<br>
+            &nbsp;&nbsp;<input type="radio" name="cardType" value="Java SmartCard">Java SmartCard<br>
+            <!--密码输入框-->
+            Credit Card password:<input type="password" name="cardNum"><br>
+            Repeat Credit Card password:<input type="password" name="cardNum"><br><br>
+            
+            <center>
+           		 <input type="submit" value="Submit Order">
+            </center>            
+        </form> 
+
+  </body>
+</html>
